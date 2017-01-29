@@ -1,3 +1,3 @@
 ### app
 
-<script type="text/javascript" src="{{ site.github.url }}/src/main/resources/public/bundle.js"></script>
+<script type="text/javascript" src="https://whispering-dusk-39904.herokuapp.com/bundle.js"></script>
