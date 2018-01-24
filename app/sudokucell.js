@@ -1,5 +1,4 @@
 import React from 'react';
-import $ from 'jquery';
 import _ from 'lodash';
 
 export default class SudokuCell extends React.Component {
