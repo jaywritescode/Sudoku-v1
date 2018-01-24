@@ -21,7 +21,7 @@ public class SudokuApplication {
     public static void main(String... args) {
         ProcessBuilder processBuilder = new ProcessBuilder();
         String port = processBuilder.environment().get("PORT");
-        port(port != null ? Integer.parseInt(port) : 4567);
+        port(port != null ? Integer.parseInt(port) : 8080);
 
         staticFileLocation("/public");
         post("/solve", (req, res) -> {
