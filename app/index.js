@@ -48,7 +48,7 @@ export default class SudokuApp extends React.Component {
   }
 
   clearStylesheet() {
-    while (dummyStylesheet.rules.length) {
+    while (dummyStylesheet.cssRules.length) {
       dummyStylesheet.deleteRule(0);
     }
   }
