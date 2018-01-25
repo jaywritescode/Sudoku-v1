@@ -2,4 +2,7 @@
 A sudoku solver, so you don't have to think and do logic.
 
 ### where it lives
-Until I get my DNS pointed in the right direction, it's at https://whispering-dusk-39904.herokuapp.com/.
+https://sudoku.jayharris.info
+
+### how it works
+Use the number doodads to adjust the size of the grid. Then fill in the grid so it looks like the puzzle you're solving. Then click Solve.
