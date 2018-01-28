@@ -240,9 +240,22 @@ public class Sudoku {
         return Strings.repeat("-", ((cellWidth + 1) * boxesPerColumn) * boxesPerRow + 1);
     }
 
+    /**
+     * A <pre>(row, column, digit)</pre> triple that represents a potential
+     * solution to a particular cell.
+     */
     public static class Candidate {
         public final int row, column, digit;
 
+        /**
+         * Constructor.
+         * <p>
+         * Note that {@code row} and {@code column} are one-indexed.
+         *
+         * @param row
+         * @param column
+         * @param digit
+         */
         public Candidate(int row, int column, int digit) {
             this.row = row;
             this.column = column;
