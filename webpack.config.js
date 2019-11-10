@@ -26,7 +26,10 @@ module.exports = {
     progress: true,
     stats: 'errors-only',
     host: process.env.HOST,
-    port: process.env.PORT
+    port: process.env.PORT,
+    proxy: {
+      '/': 'http://localhost:8080',     // the local backend runs on port 8080
+    }
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin()
