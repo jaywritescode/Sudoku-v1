@@ -12,7 +12,7 @@ module.exports = {
     app: PATHS.app
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['.js', '.jsx']
   },
   output: {
     path: PATHS.build,
@@ -32,17 +32,12 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin()
   ],
   module: {
-    loaders: [
-      {
-        test: /\.jsx?$/,
-        loaders: ['babel?cacheDirectory'],
-        include: PATHS.app
-      },
+    rules: [
+      { test: /\.jsx?$/, use: 'babel-loader' },
       {
         test: /\.s(a|c)ss$/,
-        loaders: ['style', 'css', 'sass'],
-        include: PATHS.style
-      }
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
     ]
   },
   devtool: 'eval-source-map'

@@ -24,28 +24,29 @@
   "homepage": "https://github.com/jharris119/sudoku#readme",
   "babel": {
     "presets": [
-      "es2015",
-      "react"
+      "@babel/preset-env",
+      "@babel/preset-react"
     ]
   },
   "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.6.0",
-    "babel-preset-react": "^6.5.0",
-    "css-loader": "^3.2.0",
     "jquery": "~> 3.4.0",
     "lodash": "^4.17.13",
-    "node-sass": "~> 4.12.0",
     "react": "^15.0.1",
     "react-bootstrap": "^0.28.5",
-    "react-dom": "^15.0.1",
-    "sass-loader": "^3.2.0",
-    "style-loader": "^0.13.1",
-    "webpack": "^4.41.2",
-    "webpack-dev-server": "^3.9.0"
+    "react-dom": "^15.0.1"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.10"
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^0.13.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   }
 }
