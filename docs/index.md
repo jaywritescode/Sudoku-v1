@@ -1,3 +1,3 @@
 <div id="app"></div>
 
-<script type="text/javascript" src="https://whispering-dusk-39904.herokuapp.com/bundle.js"></script>
+<script type="text/javascript" src="https://sudoku.jaywritesco.de/bundle.js"></script>
